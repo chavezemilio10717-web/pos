@@ -1,7 +1,8 @@
 -- ============================================================
 --  Súper POS · Datos de demostración
---  Ejecutar después de schema.sql:
---    mysql -u root supermercado < database/seed.sql
+--  Ejecutar después de schema.sql (usa UTF-8 para conservar acentos):
+--    mysql -u root --default-character-set=utf8mb4 supermercado
+--    SOURCE database/seed.sql;
 --  Es idempotente: no duplica categorías, productos ni clientes.
 -- ============================================================
 

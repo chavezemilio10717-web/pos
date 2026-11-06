@@ -4,8 +4,9 @@
 --  que reemplazó los acentos por "??". Este script restaura los
 --  textos sin alterar precios, stock ni relaciones.
 --
---  Ejecutar:
---    mysql -u root supermercado < database/fix-encoding.sql
+--  Ejecutar (usa UTF-8 para conservar acentos):
+--    mysql -u root --default-character-set=utf8mb4 supermercado
+--    SOURCE database/fix-encoding.sql;
 -- ============================================================
 
 USE supermercado;
